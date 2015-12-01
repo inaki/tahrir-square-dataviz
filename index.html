@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tahrir Square Dataviz</title>
+    <meta name="author" content="Imanol Aranzadi" />
+    <meta name="description" content="" />
+    <meta name="keywords"  content="" />
+    <meta name="Resource-type" content="Document" />
+
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['Gainsboro', 'Gainsboro', 'Gainsboro', 'Gainsboro', 'Gainsboro'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000
+            });
+
+            $('#showExamples').click(function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                $('#examplesList').toggle();
+            });
+
+            $('html').click(function(){
+                $('#examplesList').hide();
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+
+<div id="menu-container">
+	<ul id="menu">
+	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+	    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+	    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+	    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+	    <li data-menuanchor="lastPage"><a href="#lastPage">Fourth section</a></li>
+	</ul>
+</div>
+
+<div id="fullpage">
+
+    <div class="section active" id="section0">
+      
+      <div class="slide active">
+          <div class="intro">
+              <h1>intro 1</h1>
+          </div>
+      </div>
+      <div class="slide">
+          <div class="intro">
+              <h1>intro 2</h1>
+          </div>
+      </div>
+      <div class="slide">
+          <div class="intro">
+              <h1>intro 3</h1>
+          </div>
+      </div>
+      <div class="slide">
+          <div class="intro">
+              <h1>about</h1>
+          </div>
+      </div>
+
+    </div>
+    <div class="section" id="section1">
+        
+	  <h1>segunda seccion</h1>
+
+    </div>
+    <div class="section" id="section2">
+        <h1>tercera seccion</h1>
+        <a class="button" href="#">Anchor button</a>
+    </div>
+    <div class="section" id="section3">
+          <div class="container about">
+            <h2>About</h2>
+            <div class="col-4">
+            	<img src="images/yose.png" alt="">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem ipsa possimus distinctio, consequatur ab excepturi laboriosam sequi sapiente non aut odit placeat corporis quod similique! Error delectus necessitatibus nihil?</p>
+            </div>
+            <div class="col-4">
+            	<img src="images/yose.png" alt="">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est illo, quia magni eum laboriosam ad accusamus quasi voluptas quidem consequatur blanditiis inventore non id dignissimos, natus veritatis doloribus itaque.</p>
+            </div>
+            
+            <div class="col-4">
+            	<img src="images/yose.png" alt="">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quod ab voluptatem a! Eligendi reiciendis rerum natus quasi provident consequatur. Alias error asperiores, mollitia magni odit inventore fugiat aut rerum.</p>
+            </div>
+          </div>
+    </div>
+    <div class="section" id="section4">
+          <div class="container data">
+            <h2>Data</h2>
+            <div class="col-8">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem ipsa possimus distinctio, consequatur ab excepturi laboriosam sequi sapiente non aut odit placeat corporis quod similique! Error delectus necessitatibus nihil?</p>
+            </div>
+            <div class="col-4">
+            	<img src="images/yose.png" alt="">
+            </div>
+          </div>
+    </div>
+</div>
+
+
+</body>
+</html>
