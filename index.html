@@ -12,6 +12,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,200' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style-fullpage.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!--[if IE]>
@@ -22,13 +24,15 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/jquery.easings.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 
     <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1'],
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                sectionsColor: ['#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'datapage'],
                 menu: '#menu',
                 css3: true,
                 scrollingSpeed: 1000
@@ -52,33 +56,47 @@
 
 <div id="menu-container">
 	<ul id="menu">
-	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-	    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-	    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-	    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
-	    <li data-menuanchor="lastPage"><a href="#lastPage">Fourth section</a></li>
+	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+	    <li data-menuanchor="secondPage"><a href="#secondPage">Intro</a></li>
+	    <li data-menuanchor="3rdPage"><a href="#3rdPage">Groups</a></li>
+	    <li data-menuanchor="4thpage"><a href="#4thpage">Protests</a></li>
+	    <li data-menuanchor="lastPage"><a href="#lastPage">Protestors</a></li>
+      <li data-menuanchor="lastPage"><a href="#datapage">About</a></li>
 	</ul>
 </div>
 
 <div id="fullpage">
 
-    <div class="section active" id="section0">
+    <div class="section active introduction" id="section0">
       
       <div class="slide active">
-          <div class="intro">
-              <h1>intro 1</h1>
+          <div class="intro animated fadeIn">
+              <h2 class="intro-titles-one">
+                <span>In 2011, over a million of Egyptians </span><br>
+                <span>took to Tahrir Square, overthrowing</span><br>
+                <span>the 30 year rule of Hosni Mubarak.</span>
+              </h2>
           </div>
+
+          <div class="intro-2 animated fadeIn">
+              <h2 class="intro-titles-two">
+                <span>However, in 2013 protests in Egypt </span><br>
+                <span>were effectively banned under </span><br>
+                <span>emergency laws.</span>
+              </h2>
+          
+          <!-- <img class="arrow" src="images/arrow_transparent.svg" alt=""> -->
+          
       </div>
-      <div class="slide slide2">
+<!--       <div class="slide slide2">
           <div class="intro2">
               <h1>intro 2</h1>
           </div>
-      </div>
+      </div> -->
 
     </div>
     <div class="section" id="section1">
         
-	  <h2>Yet today, thousands of Egyptians continue to take to the streets every month in spite of the threat of violence or arrest by authorities.</h2>
 
     </div>
 
@@ -171,18 +189,19 @@
           </div>
     </div>
     <div class="section" id="section5">
-          <div class="container data">
-            <h2>Data</h2>
-            <div class="col-8">
-            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem ipsa possimus distinctio, consequatur ab excepturi laboriosam sequi sapiente non aut odit placeat corporis quod similique! Error delectus necessitatibus nihil?</p>
-            </div>
-            <div class="col-4">
-            	<img src="images/yose.png" alt="">
-            </div>
-          </div>
+          
     </div>
 </div>
 
+<script>
+
+function changeBgImage(){
+    $('#section0').switchClass( "introduction", "introduction-2", 1000, "easeInOutQuad" );
+    $('.intro-2 h2').switchClass( "intro-titles-two", "intro-titles-two-show", 1000, "easeInOutQuad" );
+}
+
+setInterval(changeBgImage, 5000);
+</script>
 
 </body>
 </html>

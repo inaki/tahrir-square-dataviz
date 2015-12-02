@@ -103,13 +103,13 @@ p{
 }
 #menu{
 	position: relative;
-	width: 760px;
+	width: 660px;
 	margin: 0 auto;
 }
 
 
 #usedBy{
-	background-image: url('imgs/used-by-fullpage.png?v=2');
+	
 	margin: 0 auto;
 	margin-top: 50px;
 	display: block;
