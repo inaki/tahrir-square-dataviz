@@ -51,6 +51,7 @@ body{
 	font-family: arial,helvetica;
 	color: #333;
 	color: rgba(0,0,0,0.5);
+	background: #fff8f1;
 }
 .wrap{
 	margin-left: auto;
@@ -70,7 +71,7 @@ p{
 }
 #menu-container {
 	position: fixed;
-	z-index: 99;
+	z-index: 990;
 	width: 100%;
 	background: black;
 	height: 45px;
@@ -87,7 +88,7 @@ p{
 	color: gray;
 }
 #menu li.active a:hover{
-	color: tomato;
+	color: #fff8f1;
 }
 #menu li a:hover{
 	color:#666;

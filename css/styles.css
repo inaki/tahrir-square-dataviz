@@ -15,6 +15,11 @@ h2 {
 	top: -100px;
 }
 
+.col-2 {
+	width: 18%;
+	float: left;
+	padding: 5px;
+}
 .col-4 {
 	width: 33%;
 	float: left;
@@ -27,13 +32,10 @@ h2 {
 /*about styles*/
 
 .about img {
-	width: 125px;
-	border-radius: 100%;
+	width: 200px;
 	padding: 30px;
 }
-.about p {
-	font-size: 16px;
-}
+
 
 /*data styles*/
 .data img {
@@ -44,4 +46,112 @@ h2 {
 .data p {
 	font-size: 16px;
 	padding: 50px;
+}
+
+/*slide intro styles*/
+#section0 {
+	background-image: url('../images/tahrirfull.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#section0 .slide2{
+	background-image: url('../images/halfalso.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/*sections styles*/
+#section1 h2 {
+	font-size: 3.5em;
+	position: relative;
+	margin: 0 170px;
+	line-height: 1.3em;
+	top: 0px;
+}
+#section2 {
+	text-align: left;
+}
+#section2 img{
+	width: 100%;
+	margin: 0 auto;
+}
+#section2 .title{
+	font-size: 1.2em;
+	line-height: 1em;
+}
+#section2 .line{
+	width: 100%;
+	height: 1px;
+	background: gray;
+	margin-bottom: 15px;
+}
+#section2 .circle1{
+	width: 15px;
+	height: 15px;
+	background: #4d5e83;
+	border-radius: 100%;
+}
+#section2 .circle2{
+	width: 15px;
+	height: 15px;
+	background: #579e9b;
+	border-radius: 100%;
+}
+#section2 .circle3{
+	width: 15px;
+	height: 15px;
+	background: #e7654b;
+	border-radius: 100%;
+}
+#section2 .circle4{
+	width: 15px;
+	height: 15px;
+	background: #bd4d6b;
+	border-radius: 100%;
+}
+#section2 .circle5{
+	width: 15px;
+	height: 15px;
+	background: #a88a79;
+	border-radius: 100%;
+}
+
+#section2 .super{
+	font-size: 1.7em;
+	line-height: 1em;
+}
+#section2 .description{
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+#section3 {
+	background-image: url('../images/viz.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#section4 .name {
+	font-weight: 700;
+	font-size: 1.1em;
+	text-align: left;
+	margin-left: -32px;
+}
+#section4 .subtitle {
+	font-size: 1em;
+	text-align: left;
+	line-height: 3em;
+	margin-left: 2px;
+}
+#section4 p.description {
+	font-size: 16px;
+	width: 201px;
+	text-align: left;
+	margin: 0 58px;
+	padding-top: 15px;
+}
+#section4 .about > div:nth-child(3) > span:nth-child(3){
+	margin-left: -64px;
+}
+#section4 div.col-4:nth-child(4) > span:nth-child(3) {
+	margin-left: -90px;
 }
