@@ -12,7 +12,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,200' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style-fullpage.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
@@ -84,7 +84,7 @@
                 <span>were effectively banned under </span><br>
                 <span>emergency laws.</span>
               </h2>
-          
+          </div>
           <!-- <img class="arrow" src="images/arrow_transparent.svg" alt=""> -->
           
       </div>
@@ -96,8 +96,16 @@
 
     </div>
     <div class="section" id="section1">
-        
-
+        <h2>Yet today, <span class="strong">thousands</span> of Egyptians continue to take to the streets every month in spite of the threat of <span class="strong">violence</span> or <span class="strong">arrest</span> by authorities.</h2>
+        <hr>
+        <h4>Meet the protesting groups who are taking to the streets.</h4>
+        <ul>
+          <li><div class="circle1"></div></li>
+          <li><div class="circle2"></div></li>
+          <li><div class="circle3"></div></li>
+          <li><div class="circle4"></div></li>
+          <li><div class="circle5"></div></li>
+        </ul>
     </div>
 
     <div class="section" id="section2">
@@ -189,18 +197,30 @@
           </div>
     </div>
     <div class="section" id="section5">
-          
+          <h2>ANHRI</h2>
+          <h3>An Egyptian based human rights organization that was established in 2004 and focuses on defending freedom of expression and freedom of the press in Egypt and the Arab world.</h3>
+          <hr>
+          <h4><span class="strong">You can help by sharing on social media or reporting a protest</span></h4>
+          <form action="">
+            <input type="text" placeholder="Date">
+            <input type="text" placeholder="Group">
+            <input type="text" placeholder="Chant">
+            <button type="submit">Verify</button>
+          </form>
     </div>
 </div>
 
 <script>
 
-function changeBgImage(){
-    $('#section0').switchClass( "introduction", "introduction-2", 1000, "easeInOutQuad" );
-    $('.intro-2 h2').switchClass( "intro-titles-two", "intro-titles-two-show", 1000, "easeInOutQuad" );
-}
+// function changeBgImage(){
+//     $('#section0').switchClass( "introduction", "introduction-2", 1000, "easeInOutQuad" );
+//     $('.intro-2 h2').switchClass( "intro-titles-two", "intro-titles-two-show", 1000, "easeInOutQuad" );
+//     $('.intro-2 h2').attr("animated fadeIn");
 
-setInterval(changeBgImage, 5000);
+    
+// }
+
+// setInterval(changeBgImage, 5000);
 </script>
 
 </body>
