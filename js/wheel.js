@@ -11,11 +11,13 @@ var dataset = [
 			   ];
 var colors = ['#4D5E83','#E7654B','#579E9C','#BD4E6B','#A88A79']
 var groups = ['Muslim Brotherhood', 'Labor & Social', 'Students', 'Civil Powers', 'Pro-Regime'];
-var w = 600, h = 350;
-var y = 20;
-var x = 20;
+var w = '100%';
+var h = '100%';
+var y = 13;
+var x = 13;
 var steps = 1;
-var counter = 0;
+var centerX = 550;
+var centerY = 305;
 
 var svg = d3.select('#chart').append('svg')
 	.attr('width', w)
@@ -25,7 +27,6 @@ var xScale = d3.scale.linear()
 	.domain([0, d3.max(dataset)])
 	.range([0, w]);
 
-
 svg.selectAll('circle')
 	.data(dataset)
 	.enter()
@@ -33,12 +34,12 @@ svg.selectAll('circle')
 	.attr('class', 'circle')
 	.attr('cy', function(d,i){
 
-		if (y <= 60) {
-			y += 20;
-			return y;
+		if (y <=39) {
+			y += 13;
+			return y + centerY;
 		} else {
-			y = 40;
-			return y;
+			y = 26;
+			return y + centerY;
 		};		
 	
 	})
@@ -46,11 +47,11 @@ svg.selectAll('circle')
 		
 		if (steps < 4) {
 			steps += 1;
-			return x;
+			return x + centerX;
 		} else {
 			steps = 2;
-			x += 20;
-			return x;
+			x += 13;
+			return x + centerX;
 		};	
 	})
 	.attr('fill', function(d,i){
