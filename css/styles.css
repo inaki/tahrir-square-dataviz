@@ -78,9 +78,9 @@ h2 {
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
 }
 #section0 .intro-titles-two {
   -webkit-animation-duration: 2s;
@@ -209,10 +209,66 @@ h2 {
 	font-size: 0.9em;
 	line-height: 1.2em;
 }
-#section3 {
-	background-image: url('../images/4_viz.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
+#section3 .fp-tableCell{
+	background: #F2EBE5;
+}
+#section3 .left-side {
+	position: absolute;
+	width: 17%;
+	top: 100px;
+}
+#section3 .right-side {
+	background: #FFF8F1;
+	position: absolute;
+	right: 0;
+	width: 16%;
+	top: 60px;
+	margin-right: 10px;
+}
+#section3 .left-side .groups{
+	text-align: left;
+	margin-left: 31px;
+}
+#section3 .left-side .groups li {
+    background: url("../images/chambray.svg") no-repeat left 3px;
+    background-size: 10px;
+    padding-left: 1em;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+}
+#section3 .left-side .groups li:nth-child(2) {
+    background: url("../images/flamingo.svg") no-repeat left 3px;
+    background-size: 10px;
+    padding-left: 1em;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+}
+#section3 .left-side .groups li:nth-child(3) {
+    background: url("../images/breakerbay.svg") no-repeat left 3px;
+    background-size: 10px;
+    padding-left: 1em;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+}
+#section3 .left-side .groups li:nth-child(4) {
+    background: url("../images/blush.svg") no-repeat left 3px;
+    background-size: 10px;
+    padding-left: 1em;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+}
+#section3 .left-side .groups li:nth-child(5) {
+    background: url("../images/sandrift.svg") no-repeat left 3px;
+    background-size: 10px;
+    padding-left: 1em;
+    line-height: 0.9em;
+    margin-bottom: 10px;
+}
+#section3 .left-side h3{
+	text-align: left;
+	padding-left: 30px;
+	font-weight: 200;
+	font-size: 2em;
 }
 #section4 .name {
 	font-weight: 700;
