@@ -10,62 +10,12 @@
     <meta name="Resource-type" content="Document" />
 
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,200' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style-fullpage.css" />
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/graphs.css" />
-
-    <!--[if IE]>
-        <script type="text/javascript">
-             var console = { log: function() {} };
-        </script>
-    <![endif]-->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/d3/d3.min.js"></script>
-    <!-- <script src="js/d3-transform.min.js"></script> -->
-    <script src="bower_components/lodash/lodash.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/jquery.easings.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-
-    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1'],
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'datapage'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000,
-                afterLoad: function(anchorLink, index){
-                    var loadedSection = $(this);
-                    //using anchorLink
-                    if(anchorLink == '4thpage'){
-                        wheelLoad();
-                        barChartLoad();
-                    }
-                },
-                onLeave: function(index, nextIndex, direction){
-                    var leavingSection = $(this);
-
-                    //after leaving section 
-                    if(index == 4 && direction =='down'){
-                        $('#chart-side svg').remove();
-                        $('#chart svg').remove();
-                    }
-
-                    else if(index == 4 && direction == 'up'){
-                        $('#chart-side svg').remove();
-                        $('#chart svg').remove();
-                    }
-                }
-            });
-
-        });
-    </script>
 
 </head>
 <body>
@@ -73,12 +23,12 @@
 
 <div id="menu-container">
 	<ul id="menu">
-	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-	    <li data-menuanchor="secondPage"><a href="#secondPage">Intro</a></li>
-	    <li data-menuanchor="3rdPage"><a href="#3rdPage">Groups</a></li>
-	    <li data-menuanchor="4thpage"><a href="#4thpage">Protests</a></li>
-	    <li data-menuanchor="lastPage"><a href="#lastPage">Protestors</a></li>
-      <li data-menuanchor="lastPage"><a href="#datapage">About</a></li>
+	    <li data-menuanchor="homePage" class="active"><a href="#homePage">Home</a></li>
+	    <li data-menuanchor="introPage"><a href="#introPage">Intro</a></li>
+	    <li data-menuanchor="groupsPage"><a href="#groupsPage">Groups</a></li>
+	    <li data-menuanchor="protestsPage"><a href="#protestsPage">Protests</a></li>
+	    <li data-menuanchor="ProtestorsPage"><a href="#ProtestorsPage">Protestors</a></li>
+      <li data-menuanchor="aboutPage"><a href="#aboutPage">About</a></li>
 	</ul>
 </div>
 
@@ -249,6 +199,54 @@
 </div>
 
 
+<!--[if IE]>
+    <script type="text/javascript">
+         var console = { log: function() {} };
+    </script>
+<![endif]-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<!-- <script src="js/d3-transform.min.js"></script> -->
+<script src="bower_components/lodash/lodash.min.js"></script>
+
+<script src="js/jquery.easings.min.js"></script>
+
+
+<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1'],
+                anchors: ['homePage', 'introPage', 'groupsPage', 'protestsPage', 'ProtestorsPage', 'aboutPage'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000,
+                afterLoad: function(anchorLink, index){
+                    var loadedSection = $(this);
+                    //using anchorLink
+                    if(anchorLink == 'protestsPage'){
+                        wheelLoad();
+                        barChartLoad();
+                    }
+                },
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+
+                    //after leaving section 
+                    if(index == 4 && direction =='down'){
+                        $('#chart-side svg').remove();
+                        $('#chart svg').remove();
+                    }
+
+                    else if(index == 4 && direction == 'up'){
+                        $('#chart-side svg').remove();
+                        $('#chart svg').remove();
+                    }
+                }
+            });
+
+        });
+    </script>
 <script src="js/wheel.js"></script>
 <script src="js/chart-side.js"></script>
 
