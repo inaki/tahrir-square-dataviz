@@ -204,51 +204,11 @@
          var console = { log: function() {} };
     </script>
 <![endif]-->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/d3/d3.min.js"></script>
-<!-- <script src="js/d3-transform.min.js"></script> -->
-<script src="bower_components/lodash/lodash.min.js"></script>
-
-<script src="js/jquery.easings.min.js"></script>
 
 
-<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1', '#fff8f1'],
-                anchors: ['homePage', 'introPage', 'groupsPage', 'protestsPage', 'ProtestorsPage', 'aboutPage'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000,
-                afterLoad: function(anchorLink, index){
-                    var loadedSection = $(this);
-                    //using anchorLink
-                    if(anchorLink == 'protestsPage'){
-                        wheelLoad();
-                        barChartLoad();
-                    }
-                },
-                onLeave: function(index, nextIndex, direction){
-                    var leavingSection = $(this);
+<script type="text/javascript" src="js/app.js"></script>
 
-                    //after leaving section 
-                    if(index == 4 && direction =='down'){
-                        $('#chart-side svg').remove();
-                        $('#chart svg').remove();
-                    }
 
-                    else if(index == 4 && direction == 'up'){
-                        $('#chart-side svg').remove();
-                        $('#chart svg').remove();
-                    }
-                }
-            });
-
-        });
-    </script>
-<script src="js/wheel.js"></script>
-<script src="js/chart-side.js"></script>
 
 </body>
 </html>
