@@ -1,0 +1,143 @@
+// MEDIA QUERIES STYLES
+//* --------------------------------------- */
+/* Smaller than 770px height */
+@media screen and (max-height: 770px){
+	#section0 #logo{
+		max-width: 250px !important;
+		height: auto !important
+	}
+	#section0 #usedBy{
+		padding: 10px 0 0 0;
+		height: 60px;
+		width: 398px;
+		margin-top: 40px;
+		background-size: cover;
+	}
+}
+
+/* Smaller than 680px height */
+@media screen and (max-height: 680px){
+	#section0 #usedBy{
+		margin-top: 15px;
+		height: 41px;
+		width: 308px;
+		background-size: cover;
+	}
+	#section0 #logo{
+		max-width: 200px !important;
+		height: auto !important
+	}
+	
+}
+
+/* Smaller than 580px height */
+@media screen and (max-height: 580px){
+	#section0 #logo{
+		max-width: 150px !important;
+		height: auto !important
+	}
+	h1{
+		font-size: 4.5em;
+	}
+	#donations a{
+		font-size: 57%;
+	}
+
+	.intro p{
+		font-size: 1.1em;
+	}
+}
+
+/* Smaller than 480px height */
+@media screen and (max-height: 480px){
+	#usedBy{
+		display: none;
+	}
+}
+
+/*creen resolutions smaller than 620px width */
+@media all and (max-width: 900px){
+	#usedBy{
+		padding: 0 0 0 0;
+	}
+}
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 890px){
+	#twitter-widget-0{
+		left: 20px;
+		top: 63px;
+	}
+	#section1 #slidersImg{
+		max-width: 462px;
+		height: auto !important;
+	}
+	#menu li {
+		margin: 5px;
+	}
+	#menu li a,
+	#menu li.active a{
+		padding: 9px 12px;
+	}
+}
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 650px){
+	#menu{
+		z-index: 9999;
+	}
+	#menu li {
+		margin: 3px;
+	}
+	#menu li a,
+	#menu li.active a{
+		padding: 9px 12px;
+
+	}
+	
+	#section2 img{
+		margin: 20px 0 0 0;
+	}
+	.intro p{
+		font-size: 1.1em;
+	}
+	#usedBy{
+		width: 310px !important;
+		height: 46px !important;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+	}
+}
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 580px){
+	#menu li a,
+	#menu li.active a{
+		padding: 8px 11px;
+		font-size: 13px;
+	}
+	#supportedBy{
+		display: none;
+	}
+	#section1 #slidersImg{
+		max-width: 350px;
+		height: auto !important;
+	}
+	#section2 #easyToUse{
+		max-width: 350px;
+		height: auto !important;
+	}
+	.intro p{
+		width: 75%;
+	}
+	h1 {
+	   font-size: 2.7em;
+	}
+	#infoMenu{
+		text-align: center;
+	}
+	#infoMenu ul{
+		display: inline-block;
+		padding: 0;
+	}
+	#infoMenu li a{
+		margin: 0 10px 0 0;
+	}
+}

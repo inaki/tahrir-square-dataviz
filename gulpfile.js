@@ -32,8 +32,44 @@ gulp.task('minifyScripts', ['concatScripts'], function(){
 		.pipe(gulp.dest('js'));
 });
 
+gulp.task('compileSass', function(){
+	return gulp.src('scss/application.scss')
+	.pipe(maps.init())
+	.pipe(sass())
+	.pipe(maps.write('./'))
+	.pipe(gulp.dest('css'));
+
+});
+
 gulp.task('default', ['concatScripts'],  function(){
 	console.log('running gulp and concatening js file in app.js');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

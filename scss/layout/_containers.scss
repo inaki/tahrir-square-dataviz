@@ -1,6 +1,6 @@
-* {
-	font-family: 'Titillium Web', sans-serif;
-}
+// CONTAINERS STYLES
+//* --------------------------------------- */
+
 .fullpage {
 	z-index: 0;
 }
@@ -9,51 +9,16 @@
 	margin: 0 auto;
 }
 
-h2 {
-	font-size: 2em;
-	position: relative;
-}
 
-.col-2 {
-	width: 18%;
-	float: left;
-	padding: 5px;
-}
-.col-4 {
-	width: 33%;
-	float: left;
-}
-.col-8 {
-	width: 66%;
-	float: left;
-}
-
-/*about styles*/
-
-.about img {
-	width: 200px;
-	padding: 30px;
-}
-
-
-/*data styles*/
-.data img {
-	width: 125px;
-	border-radius: 100%;
-	padding: 30px;
-}
-.data p {
-	font-size: 16px;
-	padding: 50px;
-}
-
-/*slide intro styles*/
+// SECTION 0 => INITIAL PART STYLES
+//* --------------------------------------- */
 .introduction {
 	background-image: url('../images/tahrirfull.png');
 }
 .introduction-2 {
 	background-image: url('../images/both.png');
 }
+
 #section0 {
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -101,7 +66,11 @@ h2 {
 	line-height: 2em;
 	padding: 0 35px;
 }
-/*sections styles*/
+
+
+
+// SECTION 1 => INTRODUCTION PART STYLES
+//* --------------------------------------- */
 #section1{
 	background: url('../images/bg-circle.png');
 	background-size: 100%;
@@ -147,6 +116,11 @@ h2 {
 	float: left;
 	padding: 7px;
 }
+
+
+
+// SECTION 2 => GROUPS PART STYLES
+//* --------------------------------------- */
 #section2 .col-2 img {
 	margin-bottom: 20px;
 }
@@ -170,37 +144,6 @@ h2 {
 #section2 .circle1, #section2 .circle2, #section2 .circle3, #section2 .circle4, #section2 .circle5 {
 	margin-bottom: 10px;
 }
-.circle1{
-	width: 15px;
-	height: 15px;
-	background: #4d5e83;
-	border-radius: 100%;
-}
-.circle2{
-	width: 15px;
-	height: 15px;
-	background: #579e9b;
-	border-radius: 100%;
-}
-.circle3{
-	width: 15px;
-	height: 15px;
-	background: #e7654b;
-	border-radius: 100%;
-}
-.circle4{
-	width: 15px;
-	height: 15px;
-	background: #bd4d6b;
-	border-radius: 100%;
-}
-.circle5{
-	width: 15px;
-	height: 15px;
-	background: #a88a79;
-	border-radius: 100%;
-}
-
 #section2 .super{
 	font-size: 1.7em;
 	line-height: 1em;
@@ -209,6 +152,12 @@ h2 {
 	font-size: 0.9em;
 	line-height: 1.2em;
 }
+
+
+
+
+// SECTION 3 => PROTESTS PART STYLES
+//* --------------------------------------- */
 #section3 .fp-tableCell{
 	background: #F2EBE5;
 }
@@ -270,6 +219,31 @@ h2 {
 	font-weight: 200;
 	font-size: 2em;
 }
+#chart {
+	background: #FFF8F1;
+	background-image: url('../images/center.svg');
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0 auto;
+	width: 65%;
+	height: 800px;
+	margin-top: 10px;
+}
+path {
+	fill: none;
+	stroke: #4C5D84;
+	stroke-width: 3px;
+}
+
+.textlabel {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+
+// SECTION 4 => PROTESTORS PART STYLES
+//* --------------------------------------- */
 #section4 .name {
 	font-weight: 700;
 	font-size: 1.1em;
@@ -295,6 +269,11 @@ h2 {
 #section4 div.col-4:nth-child(4) > span:nth-child(3) {
 	margin-left: -90px;
 }
+
+
+
+// SECTION 5 => ABOUT PART STYLES
+//* --------------------------------------- */
 #section5 {
 	text-align: left;
 	width: 50%;
@@ -337,4 +316,7 @@ h2 {
 	font-size: 1.2em;
 }
 
-
+.about img {
+	width: 200px;
+	padding: 30px;
+}
