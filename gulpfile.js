@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
-	raname = require('gulp-rename'),
+	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
 	maps = require('gulp-sourcemaps'),
 	del = require('del');
@@ -23,6 +23,13 @@ gulp.task('concatScripts', function(){
 	])
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('js'));
+});
+
+gulp.task('minifyScripts', ['concatScripts'], function(){
+	return gulp.src('js/app.js')
+		.pipe(uglify())
+		.pipe(rename('app.min.js'))
+		.pipe(gulp.dest('js'));
 });
 
 gulp.task('default', ['concatScripts'],  function(){
