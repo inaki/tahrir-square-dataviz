@@ -41,8 +41,26 @@ gulp.task('compileSass', function(){
 
 });
 
-gulp.task('default', ['concatScripts'],  function(){
-	console.log('running gulp and concatening js file in app.js');
+gulp.task('watchFiles', function(){
+	// this scss/**/*.scss is called a gobbling pattern
+	gulp.watch(['scss/**/*.scss'],['compileSass']);
+	gulp.watch(['js/main.js'],['concatScripts']);
+});
+
+gulp.task('clean', function(){
+	del(['dist', 'css/application.css*','js/app*.js*']);
+});
+
+gulp.task('build',['minifyScripts','compileSass'],function(){
+	return gulp.src(['css/application.css','js/app.min.css','index.html',
+		'img/**','fonts/**'], {base:'./'})
+	pipe(gulp.dest('dist'));
+});
+
+gulp.task('serve',['watchFiles']);
+
+gulp.task('default', ['clean'],  function(){
+	gulp.start('build');
 });
 
 
