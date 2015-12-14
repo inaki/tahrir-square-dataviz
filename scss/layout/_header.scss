@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 100%;
 	margin:0;
 	padding:0;
-	color:#444;
+	color: $color-text-base;
 }
 
 // BASIC STYLES 
@@ -44,8 +44,8 @@ h1,h2,h3,h4,h5,h6 {
 body{
 	font-family: arial,helvetica;
 	color: #333;
-	color: rgba(0,0,0,0.5);
-	background: #fff8f1;
+	color: rgba($color-text-base ,0.5);
+	background: $color-prim-background;
 }
 .wrap{
 	margin-left: auto;
@@ -101,8 +101,8 @@ p{
 	left: 2px;
 	width: 8px;
 	height: 8px;
-	border: 1px solid #000;
-	background: rgba(0, 0, 0, 0);
+	border: 1px solid $black;
+	background: rgba($black, 0);
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -113,7 +113,7 @@ p{
 	position: fixed;
 	z-index: 990;
 	width: 100%;
-	background: black;
+	background: $black;
 	height: 45px;
 }
 #menu li {
@@ -121,17 +121,17 @@ p{
 	margin: 0 10px;
 }
 #menu li.active{
-	color: #fff;
+	color: $white;
 }
 #menu li a{
 	text-decoration:none;
-	color: gray;
+	color: $gray;
 }
 #menu li.active a:hover{
-	color: #fff8f1;
+	color: $color-prim-background;
 }
 #menu li a:hover{
-	color:#666;
+	color: $gray;
 }
 #menu li a,
 #menu li.active a{
@@ -139,7 +139,7 @@ p{
 	display:block;
 }
 #menu li.active a{
-	color: #fff;
+	color: $white;
 }
 #menu{
 	position: relative;

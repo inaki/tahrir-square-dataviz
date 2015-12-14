@@ -54,14 +54,14 @@
   top: 100px;
 }
 #section0 .intro-titles-one > span {
-	background: rgba(243,237,232,0.8);
+	background: rgba($color-prim-background,0.8);
 	height: 20px;
 	line-height: 2em;
 	padding: 0 35px;
 }
 
 #section0 .intro-titles-two > span {
-	background: rgba(243,237,232,0.8);
+	background: rgba($color-prim-background,0.8);
 	height: 20px;
 	line-height: 2em;
 	padding: 0 35px;
@@ -101,7 +101,7 @@
 	margin-top: 90px;
 	margin-bottom: 10px;
 	height: 2px;
-	background: #0B2D28;
+	background: $color-text-base;
 	border: none;
 }
 #section1 ul {
@@ -159,7 +159,7 @@
 // SECTION 3 => PROTESTS PART STYLES
 //* --------------------------------------- */
 #section3 .fp-tableCell{
-	background: #F2EBE5;
+	background: $color-sec-background;
 }
 #section3 .left-side {
 	position: absolute;
@@ -167,7 +167,7 @@
 	top: 100px;
 }
 #section3 .right-side {
-	background: #FFF8F1;
+	background: $color-sec-background;
 	position: absolute;
 	right: 0;
 	width: 16%;
