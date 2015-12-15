@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 // BASIC STYLES 
 //* --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: $font-san-serif;
 	color: #333;
 	color: rgba($color-text-base ,0.5);
 	background: $color-prim-background;

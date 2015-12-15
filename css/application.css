@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0A2D28; }
 
 body {
-  font-family: arial,helvetica;
+  font-family: "Titillium Web", sans-serif;
   color: #333;
   color: rgba(10, 45, 40, 0.5);
   background: #FFF8F1; }
@@ -250,10 +250,9 @@ p {
   margin: 0 auto; }
 
 .introduction {
-  background-image: url("../images/tahrirfull.png"); }
-
-.introduction-2 {
-  background-image: url("../images/both.png"); }
+  background-image: url("../images/tahrirfull.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 #section0 {
   background-size: 100%;
@@ -272,15 +271,21 @@ p {
 
 #section0 .intro-titles-one {
   text-align: left;
-  top: -100px; }
+  top: 0px; }
 
 #section0 .intro-2 {
+  background-image: url("../images/tsHalf.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 50%;
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
-  animation-delay: 5s; }
+  animation-delay: 5s;
+  position: relative;
+  bottom: -107px; }
 
 #section0 .intro-titles-two {
   -webkit-animation-duration: 2s;
@@ -453,7 +458,7 @@ path {
   stroke-width: 3px; }
 
 .textlabel {
-  font-family: 'Titillium Web', sans-serif; }
+  font-family: "Titillium Web", sans-serif; }
 
 #section4 .name {
   font-weight: 700;
@@ -569,6 +574,6 @@ path {
   border-radius: 100%; }
 
 * {
-  font-family: 'Titillium Web', sans-serif; }
+  font-family: "Titillium Web", sans-serif; }
 
 /*# sourceMappingURL=application.css.map */
