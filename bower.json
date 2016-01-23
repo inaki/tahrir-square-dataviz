@@ -1,0 +1,30 @@
+{
+  "name": "tahrir-square-dataviz",
+  "description": "Data visualization of the protests happening in Egypt.",
+  "main": "app.js",
+  "authors": [
+    "inaki aranzadi"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "egypt",
+    "protests",
+    "data",
+    "visualization"
+  ],
+  "homepage": "https://github.com/inaki/tahrir-square-dataviz",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.10",
+    "fullpage.js": "~2.7.4",
+    "lodash": "~3.10.1",
+    "jquery-ui": "~1.11.4"
+  }
+}
